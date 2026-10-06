@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Help | TechSmart Learning for Seniors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="bar">
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button class="menu-btn" aria-expanded="false">Menu</button>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html" aria-current="page">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+  </div></header>
+  <main id="main">
+    <h1>Get Help</h1>
+    <p class="lead">Request a class. You will see a thank-you here. This preview does not send the form to Salesforce.</p>
+    <form class="panel compact" data-mock>
+      <label for="name">Your name</label>
+      <input id="name" name="name" autocomplete="name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel">
+      <label for="who">Who is this for?</label>
+      <select id="who" name="who" required>
+        <option value="">Choose one</option>
+        <option>Myself</option>
+        <option>A family member or friend</option>
+        <option>Someone else</option>
+      </select>
+      <label for="type">Class type</label>
+      <select id="type" name="type" required>
+        <option value="">Choose one</option>
+        <option>One-on-one training</option>
+        <option>Group workshop</option>
+        <option>Not sure</option>
+      </select>
+      <label for="help">How can we help?</label>
+      <textarea id="help" name="help" required></textarea>
+      <p>
+        <button class="btn btn-primary" type="submit">Submit Request</button>
+        <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+      </p>
+      <div class="thanks" role="status" tabindex="-1">Thank you. We got your class request. A team member can follow up by phone or email.</div>
+    </form>
+  </main>
+  <footer><div class="inner">TechSmart Learning for Seniors · <a href="contact.html">Contact</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
