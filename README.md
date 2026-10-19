@@ -1,6 +1,6 @@
 # TechSmart Learning for Seniors
 
-Milestone 2 website prototype for the graduate capstone.
+Milestone 2 website prototype.
 
 Open `index.html` in a browser. No install is required.
 
