@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testimonials | TechSmart Learning for Seniors</title>
+  <meta name="description" content="Reviews from seniors, families, and volunteers.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="bar">
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button class="menu-btn" aria-expanded="false">Menu</button>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a><div class="drop"><button class="drop-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-current="page">More</button><div class="drop-menu" id="more-menu"><a href="resources.html">Resources</a><a href="testimonials.html" aria-current="page">Testimonials</a></div></div>
+    </nav>
+  </div></header>
+  <main id="main">
+    <h1>Testimonials</h1>
+    <p class="lead">Hear from seniors, families, and volunteers. These five samples show the layout.</p>
+    <section class="review-list" aria-label="Sample reviews">
+      <article class="review"><strong>Margaret H.</strong><span>5 - Excellent</span><p>The one-on-one class helped me send photos to my grandchildren. The teacher never rushed me.</p></article>
+      <article class="review"><strong>James P.</strong><span>5 - Excellent</span><p>I learned how to spot a scam text. That alone was worth the class.</p></article>
+      <article class="review"><strong>Linda R.</strong><span>4 - Very good</span><p>The workshop was clear and the printouts were large enough to read.</p></article>
+      <article class="review"><strong>David K.</strong><span>5 - Excellent</span><p>Volunteering here is simple. You do not need to be a computer expert.</p></article>
+      <article class="review"><strong>Anita S.</strong><span>4 - Very good</span><p>My mom can now join a video call on her own. The site made it easy to request a class.</p></article>
+    </section>
+    <section class="panel" style="margin-top:28px">
+      <h2>Share a review</h2>
+      <p class="lead">Tell us how a class, a volunteer, or a tip helped you. Your review shows on this page. It is not sent to Salesforce.</p>
+      <div id="reviews" class="review-list" aria-live="polite"></div>
+      <form class="compact" data-review>
+        <label for="rname">Your name</label>
+        <input id="rname" name="name" autocomplete="name" required>
+        <label for="rrating">Rating</label>
+        <select id="rrating" name="rating" required>
+          <option value="">Choose one</option>
+          <option>5 - Excellent</option>
+          <option>4 - Very good</option>
+          <option>3 - Good</option>
+          <option>2 - Fair</option>
+          <option>1 - Poor</option>
+        </select>
+        <label for="rtext">Your review</label>
+        <textarea id="rtext" name="text" required placeholder="What was helpful?"></textarea>
+        <p><button class="btn btn-primary" type="submit">Add Review</button></p>
+        <div class="thanks" role="status" tabindex="-1">Thank you. Your review is on this page.</div>
+      </form>
+    </section>
+  </main>
+  <footer><div class="inner">TechSmart Learning for Seniors · <a href="contact.html">Contact</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

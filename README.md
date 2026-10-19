@@ -1,8 +1,8 @@
 # TechSmart Learning for Seniors
 
-Milestone 2 website prototype.
+Milestone 2 website prototype for the graduate capstone.
 
-Download the entire folder and open "index.html" in a browser.
+Open `index.html` in a browser. No install is required.
 
 ## What this prototype covers
 
@@ -16,23 +16,18 @@ Download the entire folder and open "index.html" in a browser.
 
 ## Files
 
-- index.html is the home page and the two main paths.
-- classes.html is one-on-one training and group workshops.
-- get-help.html is the class request form.
-- volunteer.html is the volunteer interest form.
-- about.html is the organization story, mission, vision, and values.
-- contact.html is the phone, email, hours, and message form.
-- styles.css is the layout, type size, color, and phone rules.
-- script.js is the phone menu, form check, thank-you message, and card-icon highlight.
-- logo.png is the TechSmart mark.
-- seniors.jpg is the home photo.
+- `index.html` is the home page and the two main paths.
+- `classes.html` is one-on-one training and group workshops.
+- `get-help.html` is the class request form.
+- `volunteer.html` is the volunteer interest form.
+- `about.html` is the organization story, mission, vision, and values.
+- `more.html` is articles and the review form.
+- Five article pages from 2026 sources. Each page has a Read the full article link that opens the original website.
+- `styles.css` is the layout, type size, color, and phone rules.
+- `script.js` is the phone menu, form check, thank-you message, and card-icon highlight.
+- `logo.png` is the TechSmart mark.
+- `seniors.jpg` is the home photo.
 
 ## Not in this milestone
 
-Lighthouse scores, a WCAG percent, and the refined final site are Milestone 3. 
-
-
-# Note 
-A live Salesforce connection is out of scope. 
-The forms stay mocked on purpose.
-
+Lighthouse scores, a WCAG percent, and the refined final site are Milestone 3. A live Salesforce connection is out of scope. The forms stay mocked on purpose.
