@@ -7,22 +7,6 @@ function setupMenu() {
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   }
-  document.querySelectorAll(".drop").forEach(function (drop) {
-    var toggle = drop.querySelector(".drop-btn");
-    if (!toggle) return;
-    toggle.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var open = drop.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-  });
-  document.addEventListener("click", function () {
-    document.querySelectorAll(".drop.open").forEach(function (drop) {
-      drop.classList.remove("open");
-      var toggle = drop.querySelector(".drop-btn");
-      if (toggle) toggle.setAttribute("aria-expanded", "false");
-    });
-  });
 }
 function setupForms() {
   document.querySelectorAll("form[data-mock]").forEach(function (form) {
