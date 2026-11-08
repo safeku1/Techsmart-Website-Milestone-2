@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>About | TechSmart Learning for Seniors</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,20 +15,89 @@
       <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a>
     </nav>
   </div></header>
-  <main id="main">
-    <h1>About TechSmart</h1>
-    <p class="lead">Technology training for confidence, well-being, and inclusion.</p>
-    <div class="cards about-cards">
-      <article class="card"><h2>Our Mission</h2><p>To improve the health and well-being of seniors through patient technology training.</p></article>
-      <article class="card"><h2>Our Vision</h2><p>Every senior feels confident, connected, and capable with technology.</p></article>
-      <article class="card"><h2>Our Values</h2><p>Compassion, respect, and inclusion.</p></article>
+  <section class="page-hero about-banner">
+    <img src="images/jane-ratliff.jpg" alt="Jane Ratliff, founder of TechSmart">
+    <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="page-hero-copy">
+      <h1>About TechSmart</h1>
+      <p class="lead">Technology training designed to promote confidence, well-being, and inclusion for seniors.</p>
     </div>
-    <section class="panel" style="margin-top:16px">
-      <p>TechSmart for Seniors is a nonprofit serving greater Atlanta. It began in 2012 as BlueHair Technology Group and teaches older adults how to use phones, tablets, and everyday apps.</p>
-      <p><a class="btn btn-primary" href="volunteer.html">Volunteer</a></p>
+  </section>
+  <main id="main">
+    <div class="about-cards">
+      <article class="about-block about-mission">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h2>Our Mission</h2>
+          <p>To improve the health and well-being of seniors and older adults through technology training.</p>
+          <p>We believe teaching older adults how to use today’s tools promotes a happier, healthier, and longer life by reducing isolation, supporting independence, and keeping minds active.</p>
+        </div>
+      </article>
+      <article class="about-block about-vision">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <div>
+          <h2>Our Vision</h2>
+          <p>Every senior feels confident, connected, and capable with technology.</p>
+          <p>TechSmart works toward a Greater Atlanta where older adults can use phones, tablets, and everyday apps without fear, and stay close to the people and services that matter.</p>
+        </div>
+      </article>
+      <article class="about-block about-values">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h2>Our Values</h2>
+          <p>Compassion, respect, and inclusion.</p>
+          <p>We teach at a patient pace, without jargon, in a supportive setting. Questions are welcome, and no one is left behind.</p>
+        </div>
+      </article>
+    </div>
+
+    <section class="content-band about-impact" aria-labelledby="impact">
+      <h2 id="impact">How we’re doing</h2>
+      <p class="band-lead">TechSmart is a nonprofit serving Greater Atlanta. Since 2012, we have helped thousands of older adults learn, connect, and thrive.</p>
+      <div class="stat-row">
+        <article class="stat"><strong>7,000+</strong><span>Seniors educated since 2012</span></article>
+        <article class="stat"><strong>1,713</strong><span>Seniors reached in 2024</span></article>
+        <article class="stat"><strong>220+</strong><span>Workshops shared in 2024</span></article>
+      </div>
+    </section>
+
+    <section class="content-band founder" aria-labelledby="founder-heading">
+      <div class="founder-intro">
+        <div class="photo-frame">
+          <img src="images/jane-ratliff.jpg" alt="Jane Ratliff, founder of BlueHair Technology Group">
+        </div>
+        <div class="founder-copy">
+          <h2 id="founder-heading">Our Founder</h2>
+          <p class="role">Jane Ratliff, Founder</p>
+          <p>Jane Ratliff founded BlueHair Technology Group in 2012, inspired by her mother’s struggles with technology. Seeing that frustration showed a clear need for senior-focused technology education.</p>
+          <p>Under Jane’s leadership, the organization developed teaching methods for adults over 60, especially women: patient, jargon-free instruction in a supportive environment. For seven years, seniors gained digital independence, stronger family connections, and safer habits online.</p>
+          <p>Jane retired in 2019. Her vision continues as TechSmart for Seniors, with the same mission: making technology accessible and empowering for older adults.</p>
+        </div>
+      </div>
+      <div class="founder-video">
+        <p class="video-label">Watch Jane’s story</p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/JESS4p0T08U?rel=0&amp;modestbranding=1&amp;playsinline=1" title="BlueHair Technology Group - Who We Are" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
   </main>
-  <footer><div class="inner">TechSmart Learning for Seniors · <a href="contact.html">Contact</a></div></footer>
+  <footer>
+    <div class="inner">
+      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -14,30 +14,74 @@
       <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </div></header>
+  <section class="page-hero">
+    <img src="images/contact.jpg" alt="A smartphone used to reach TechSmart">
+    <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="page-hero-copy">
+      <h1>Contact</h1>
+      <p class="lead">We are glad to hear from you. Call, email, or send a short message.</p>
+    </div>
+  </section>
   <main id="main">
-    <h1>Contact</h1>
-    <div class="split">
-      <section class="panel">
-        <h2>Get in touch</h2>
-        <p><strong>Email:</strong> <a href="mailto:info@techsmartseniors.org">info@techsmartseniors.org</a></p>
-        <p><strong>Phone:</strong> <a href="tel:7706969808">(770) 696-9808</a></p>
-        <p><strong>Mail:</strong> PO Box 3202, Alpharetta, GA 30005</p>
-        <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 4:00 PM</p>
-      </section>
-      <form class="panel" data-mock>
+    <div class="split split-media">
+      <form class="brand-form" data-mock>
         <h2>Send a Message</h2>
+        <p class="form-intro">Share a question or comment. A team member will respond within 1–2 business days.</p>
         <label for="name">Your name</label>
         <input id="name" name="name" autocomplete="name" required>
         <label for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
         <label for="msg">Message</label>
         <textarea id="msg" name="msg" required></textarea>
-        <button class="btn btn-primary" type="submit">Send Message</button>
+        <div class="form-actions">
+          <button class="btn btn-hero btn-primary" type="submit">Send Message</button>
+        </div>
         <div class="thanks" role="status" tabindex="-1">Thank you. We got your message.</div>
       </form>
+      <aside class="photo-frame">
+        <img src="images/contact.jpg" alt="A phone and keyboard used to contact TechSmart">
+        <div class="pad">
+          <h2>Get in touch</h2>
+          <p><strong>Email:</strong> <a href="mailto:info@techsmartseniors.org">info@techsmartseniors.org</a></p>
+          <p><strong>Phone:</strong> <a href="tel:7706969808">(770) 696-9808</a></p>
+          <p><strong>Mail:</strong> PO Box 3202, Alpharetta, GA 30005</p>
+          <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 4:00 PM</p>
+        </div>
+      </aside>
     </div>
+
+    <section class="content-band" aria-labelledby="expect">
+      <h2 id="expect">What to expect</h2>
+      <p class="band-lead">We keep contact simple so older adults, families, and partners can reach us with ease.</p>
+      <div class="step-row">
+        <article class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Send a note</h3>
+          <p>Use the form, email, or phone. A short message is enough.</p>
+        </article>
+        <article class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>We read it carefully</h3>
+          <p>A team member reviews your message and routes it to the right person.</p>
+        </article>
+        <article class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>We reply</h3>
+          <p>You can expect a response within 1–2 business days during office hours.</p>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer><div class="inner">TechSmart Learning for Seniors · <a href="tel:7706969808">(770) 696-9808</a></div></footer>
+  <footer>
+    <div class="inner">
+      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

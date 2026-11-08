@@ -14,12 +14,19 @@
       <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html" aria-current="page">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a>
     </nav>
   </div></header>
+  <section class="page-hero">
+    <img src="images/volunteer.jpg" alt="A volunteer helping an older adult with technology">
+    <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="page-hero-copy">
+      <h1>Volunteer</h1>
+      <p class="lead">Help older adults build digital confidence and stay connected. No tech expertise is required.</p>
+    </div>
+  </section>
   <main id="main">
-    <h1>Volunteer</h1>
-    <p class="lead">Share your time. No tech expertise is required.</p>
-    <div class="split">
-      <form class="panel compact" data-mock>
+    <div class="split split-media">
+      <form class="brand-form" data-mock>
         <h2>Volunteer With Us</h2>
+        <p class="form-intro">Tell us how you’d like to help. We will follow up with next steps.</p>
         <label for="name">Your name</label>
         <input id="name" name="name" autocomplete="name" required>
         <label for="email">Email</label>
@@ -36,22 +43,96 @@
         </select>
         <label for="why">Why do you want to volunteer?</label>
         <textarea id="why" name="why" required></textarea>
-        <button class="btn btn-gold" type="submit">Submit</button>
+        <div class="form-actions">
+          <button class="btn btn-hero btn-primary" type="submit">Submit</button>
+        </div>
         <div class="thanks" role="status" tabindex="-1">Thank you. We got your volunteer interest.</div>
       </form>
-      <aside class="panel">
-        <h2>Why volunteer?</h2>
-        <ul>
-          <li>Make a real difference for older adults</li>
-          <li>Flexible hours</li>
-          <li>No tech expertise required</li>
-          <li>Meet people and keep learning</li>
-        </ul>
-        <p>Questions: <a href="mailto:info@techsmartseniors.org">info@techsmartseniors.org</a></p>
+      <aside class="photo-frame">
+        <img src="images/volunteer-class.jpg" alt="An older adult practicing smartphone skills during a TechSmart lesson">
+        <div class="pad">
+          <h2>Why volunteer?</h2>
+          <ul>
+            <li>Make a real difference for older adults</li>
+            <li>Flexible hours</li>
+            <li>No tech expertise required</li>
+            <li>Meet people and keep learning</li>
+          </ul>
+          <p>Questions: <a href="mailto:info@techsmartseniors.org">info@techsmartseniors.org</a></p>
+        </div>
       </aside>
     </div>
+
+    <section class="content-band" aria-labelledby="vol-ways">
+      <h2 id="vol-ways">Ways you can help</h2>
+      <p class="band-lead">Volunteers are a vital part of TechSmart’s work with older adults across Greater Atlanta.</p>
+      <div class="topic-row">
+        <article class="topic-card">
+          <h3>Classroom instructors</h3>
+          <p>Lead bite-sized lessons, encourage questions, and help students reach each class goal.</p>
+        </article>
+        <article class="topic-card">
+          <h3>Coaches</h3>
+          <p>Sit beside learners during practice so no one gets stuck or feels left behind.</p>
+        </article>
+        <article class="topic-card">
+          <h3>Events and outreach</h3>
+          <p>Help at community events, fundraising, or committees if teaching is not the right fit.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-band" aria-labelledby="classroom">
+      <h2 id="classroom">About the classroom</h2>
+      <p class="band-lead">TechSmart partners with libraries, community centers, houses of worship, and retirement communities.</p>
+      <div class="step-row">
+        <article class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Short lessons</h3>
+          <p>Classes are about 60 minutes and usually include 10 to 20 students, many age 70 and older.</p>
+        </article>
+        <article class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Clear steps</h3>
+          <p>Lessons use simple language, repetition, and handouts so new skills are easier to remember.</p>
+        </article>
+        <article class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Everyday topics</h3>
+          <p>Students practice email, texting, photos, rides, shopping, and using Android or iPhone devices.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-band" aria-labelledby="vol-faq">
+      <h2 id="vol-faq">Common questions</h2>
+      <p class="band-lead">Tap a question to read more. You do not need to be a technology expert to volunteer.</p>
+      <div class="faq">
+        <details>
+          <summary>Do I need teaching experience?</summary>
+          <p>No. Patience and a friendly manner matter most. TechSmart provides training and support for classroom volunteers.</p>
+        </details>
+        <details>
+          <summary>How do I get started?</summary>
+          <p>Send the form on this page. Official volunteers also register through Hands On Atlanta, attend orientation, and then choose upcoming opportunities.</p>
+        </details>
+        <details>
+          <summary>Can I help if I cannot teach a class?</summary>
+          <p>Yes. You can support events, outreach, fundraising, or a committee. Choose “Not sure yet” and we will help you find a fit.</p>
+        </details>
+      </div>
+    </section>
   </main>
-  <footer><div class="inner">TechSmart Learning for Seniors · <a href="contact.html">Contact</a></div></footer>
+  <footer>
+    <div class="inner">
+      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
