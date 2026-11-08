@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate | TechSmart Learning for Seniors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="bar">
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button class="menu-btn" aria-expanded="false">Menu</button>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+  </div></header>
+  <section class="page-hero">
+    <img src="images/banner-partners.png" alt="TechSmart community partners supporting seniors">
+    <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="page-hero-copy">
+      <h1>Thank You for Your Support</h1>
+      <p class="lead">Your donation provides vital resources needed to educate our communities’ seniors.</p>
+    </div>
+  </section>
+  <main id="main">
+    <section class="donate-embed" aria-labelledby="donate-form-heading">
+      <h2 id="donate-form-heading">Make a donation</h2>
+      <p class="form-intro">Choose an amount, enter your details, and complete your gift below. Card payments are processed securely by Stripe on TechSmart’s donation account.</p>
+      <form class="donate-form" id="donate-form" data-stripe-donate novalidate>
+        <input type="hidden" id="amount" name="amount" value="100">
+        <fieldset class="donate-amounts">
+          <legend>Donation amount</legend>
+          <div class="amounts" role="group" aria-label="Suggested donation amounts">
+            <button type="button" class="amt" data-amount="10">$10</button>
+            <button type="button" class="amt" data-amount="25">$25</button>
+            <button type="button" class="amt" data-amount="50">$50</button>
+            <button type="button" class="amt is-on" data-amount="100">$100</button>
+            <button type="button" class="amt" data-amount="250">$250</button>
+            <button type="button" class="amt" data-amount="custom">Custom</button>
+          </div>
+          <label class="custom-amount" for="other">Custom amount (U.S. dollars)
+            <input id="other" name="other" type="number" min="5" max="999999" step="0.01" inputmode="decimal" placeholder="Enter amount">
+          </label>
+        </fieldset>
+        <div class="name-row">
+          <label for="first-name">First name
+            <input id="first-name" name="first" type="text" autocomplete="given-name" required>
+          </label>
+          <label for="last-name">Last name
+            <input id="last-name" name="last" type="text" autocomplete="family-name" required>
+          </label>
+        </div>
+        <label for="email">Email address
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </label>
+        <label for="card-name">Cardholder name
+          <input id="card-name" name="card_name" type="text" autocomplete="cc-name" required>
+        </label>
+        <div class="pay-fields">
+          <div class="pay-field pay-number">
+            <span id="card-number-label">Card number</span>
+            <div id="card-number" class="stripe-box" role="group" aria-labelledby="card-number-label"></div>
+          </div>
+          <div class="pay-field">
+            <span id="card-expiry-label">Expiration date</span>
+            <div id="card-expiry" class="stripe-box" role="group" aria-labelledby="card-expiry-label"></div>
+          </div>
+          <div class="pay-field">
+            <span id="card-cvc-label">Security code (CVC)</span>
+            <div id="card-cvc" class="stripe-box" role="group" aria-labelledby="card-cvc-label"></div>
+          </div>
+        </div>
+        <p class="donate-status" id="donate-status" role="status" aria-live="polite"></p>
+        <button class="btn btn-hero btn-primary donate-submit" id="donate-submit" type="submit">Donate Now</button>
+        <p class="donate-secure">This donation is a secure and encrypted payment through Stripe.</p>
+      </form>
+      <div class="donate-success" id="donate-success" hidden tabindex="-1">
+        <h3>Thank you for your gift</h3>
+        <p id="donate-success-text">Your donation has been received. A receipt will be sent to the email address you provided.</p>
+      </div>
+    </section>
+
+    <div class="support-ways">
+      <article class="support-card support-kroger">
+        <h2>Kroger Community Rewards</h2>
+        <p>To support TechSmart each time you visit Kroger, connect your Kroger digital account with our organization. Visit <a href="https://www.kroger.com/i/community/community-rewards" target="_blank" rel="noopener noreferrer">https://www.kroger.com/i/community/community-rewards</a> and search for TechSmart for Seniors or use Organization Number <strong>SJ562</strong>.</p>
+        <a class="btn btn-hero btn-primary" href="https://www.kroger.com/i/community/community-rewards" target="_blank" rel="noopener noreferrer">Connect Kroger Rewards</a>
+      </article>
+
+      <article class="support-card support-corns">
+        <img src="images/donate/corns.jpg" alt="Friends playing cornhole at a TechSmart Game of Corns event">
+        <div>
+          <h2>Game of Corns 2026</h2>
+          <p>Bring one, bring all—your team, your family, your dog! Please join us for TechSmart’s Game of Corns charity cornhole league!</p>
+        </div>
+      </article>
+
+      <article class="support-card support-match">
+        <h2>Support Us During Your Company’s Next Annual Giving Campaign!</h2>
+        <p>Does your company offer matching gifts to support the charities you care about? Take a moment to complete your employer’s corporate matching gift form on behalf of TechSmart and help Metro Atlanta’s older adults embrace and benefit from technology.</p>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
