@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Learning Resources | TechSmart Learning for Seniors</title>
   <meta name="description" content="Helpful technology articles to help older adults stay confident, informed, and independent.">
+    <meta name="theme-color" content="#1b4f8c">
+  <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header><div class="bar">
-    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
-    <button class="menu-btn" aria-expanded="false">Menu</button>
-    <nav aria-label="Main">
-      <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-    </nav>
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" width="104" height="104" alt="TechSmart Learning for Seniors"><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="resources.html" aria-current="page">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-donate" href="donate.html">Donate</a></nav>
   </div></header>
   <section class="page-hero">
     <img src="images/help.jpg" alt="An older adult using a smartphone">
     <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <div class="page-hero-copy">
       <h1>Learning Resources</h1>
-      <p class="lead">Your support helps us create connected, independent, engaged seniors.</p>
+      <p class="lead">Friendly articles and tips to help you use technology with confidence.</p>
     </div>
   </section>
   <main id="main">
@@ -84,7 +84,7 @@
 
     <section class="register-cta" aria-labelledby="register-heading">
       <h2 id="register-heading">Ready to Register for Training? We're Ready to Help!</h2>
-      <a class="btn btn-hero btn-primary" href="get-help.html">Register Now</a>
+      <a class="btn btn-hero btn-primary" href="classes.html">Register Now</a>
       <div class="cta-contacts">
         <a href="mailto:info@techsmartseniors.org">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
@@ -99,14 +99,14 @@
   </main>
   <footer>
     <div class="inner">
-      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <span class="copy">© 2026 TechSmart Learning for Seniors</span>
       <nav class="foot-nav" aria-label="Footer">
         <a href="donate.html">Donate</a>
-        <a href="volunteer.html">Volunteer</a>
+        <a href="volunteer.html">I Want to Help</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

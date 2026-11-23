@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for a TechSmart class. Tell us your name, how to reach you, and which class you would like to join.">
+  <title>Class Registration | TechSmart Learning for Seniors</title>
+  <meta name="theme-color" content="#1b4f8c">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="bar">
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" width="104" height="104" alt="TechSmart Learning for Seniors"><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-donate" href="donate.html">Donate</a></nav>
+  </div></header>
+  <section class="page-hero slim-hero">
+    <img src="images/banner-classes.jpg" alt="">
+    <a class="back-btn" href="classes.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </section>
+  <main id="main">
+    <h1 class="sr-only">Register for a class</h1>
+    <div class="register-wrap">
+      <p id="chosen-workshop" class="chosen-workshop" hidden></p>
+      <form class="brand-form" id="register-form" action="https://formspree.io/f/mnpdovod" method="POST">
+        <h2>Register for a class</h2>
+        <input type="hidden" name="_subject" value="New class registration from TechSmart website">
+        <p class="form-intro">Please complete each field. A team member will contact you to confirm your spot.</p>
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="name" autocomplete="name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        <label for="class-choice">Class selection</label>
+        <select id="class-choice" name="class" required>
+          <option value="">Choose a class</option>
+          <option value="One-on-One Training">One-on-One Training</option>
+          <option value="Group Training Session">Group Training Session</option>
+          <option value="iPhone Basics">iPhone Basics</option>
+          <option value="Android Phone Basics">Android Phone Basics</option>
+          <option value="Stay Connected: Video Calls and Apps">Stay Connected: Video Calls and Apps</option>
+          <option value="Stay Safer Online">Stay Safer Online</option>
+        </select>
+        <label for="format">Preferred class format</label>
+        <select id="format" name="format" required>
+          <option value="">Choose one</option>
+          <option value="In-person">In-person</option>
+          <option value="Online">Online</option>
+        </select>
+        <label for="when">Preferred date/time <span class="optional">(optional)</span></label>
+        <input id="when" name="when" type="text" placeholder="Example: Tuesday mornings, or December 2 at 10 AM">
+        <label for="comments">Additional comments or questions <span class="optional">(optional)</span></label>
+        <textarea id="comments" name="comments"></textarea>
+        <div class="form-actions">
+          <button class="btn btn-hero btn-gold" type="submit">Submit Registration</button>
+        </div>
+      </form>
+      <div class="register-confirm" id="register-confirm" hidden tabindex="-1" role="status">
+        <h2>Your registration has been received</h2>
+        <p id="register-confirm-text"></p>
+        <p>TechSmart will contact you with further details. If you have questions before then, call <a href="tel:7706969808">(770) 696-9808</a> or email <a href="mailto:info@techsmartseniors.org">info@techsmartseniors.org</a>.</p>
+        <a class="btn btn-primary" href="classes.html">Back to I Need Technology Help</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <span class="copy">© 2026 TechSmart Learning for Seniors</span>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">I Want to Help</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact TechSmart Learning for Seniors. We are happy to answer questions about classes, volunteering, donations, and technology help.">
   <title>Contact | TechSmart Learning for Seniors</title>
+    <meta name="theme-color" content="#1b4f8c">
+  <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header><div class="bar">
-    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
-    <button class="menu-btn" aria-expanded="false">Menu</button>
-    <nav aria-label="Main">
-      <a href="index.html">Home</a><a href="classes.html">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a>
-    </nav>
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" width="104" height="104" alt="TechSmart Learning for Seniors"><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a><a class="nav-donate" href="donate.html">Donate</a></nav>
   </div></header>
   <section class="page-hero">
     <img src="images/contact.jpg" alt="A smartphone used to reach TechSmart">
@@ -24,8 +25,9 @@
   </section>
   <main id="main">
     <div class="split split-media">
-      <form class="brand-form" data-mock>
+      <form class="brand-form" action="https://formspree.io/f/maeoljld" method="POST">
         <h2>Send a Message</h2>
+        <input type="hidden" name="_subject" value="New message from TechSmart website">
         <p class="form-intro">Share a question or comment. A team member will respond within 1–2 business days.</p>
         <label for="name">Your name</label>
         <input id="name" name="name" autocomplete="name" required>
@@ -74,14 +76,14 @@
   </main>
   <footer>
     <div class="inner">
-      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <span class="copy">© 2026 TechSmart Learning for Seniors</span>
       <nav class="foot-nav" aria-label="Footer">
         <a href="donate.html">Donate</a>
-        <a href="volunteer.html">Volunteer</a>
+        <a href="volunteer.html">I Want to Help</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

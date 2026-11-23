@@ -2,50 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Classes | TechSmart Learning for Seniors</title>
+    <meta name="description" content="Get technology help from TechSmart. Learn about one-on-one and group classes, then search for a workshop near you with your ZIP code.">
+  <title>I Need Technology Help | TechSmart Learning for Seniors</title>
+    <meta name="theme-color" content="#1b4f8c">
+  <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header><div class="bar">
-    <a class="brand" href="index.html"><img class="logo" src="logo.png" alt=""><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
-    <button class="menu-btn" aria-expanded="false">Menu</button>
-    <nav aria-label="Main">
-      <a href="index.html">Home</a><a href="classes.html" aria-current="page">Classes</a><a href="get-help.html">Get Help</a><a href="volunteer.html">Volunteer</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-    </nav>
+    <a class="brand" href="index.html"><img class="logo" src="logo.png" width="104" height="104" alt="TechSmart Learning for Seniors"><div><strong>TechSmart</strong><span>Learning for Seniors</span></div></a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-donate" href="donate.html">Donate</a></nav>
   </div></header>
-  <section class="page-hero">
-    <img src="images/banner-classes.png" alt="A TechSmart class for older adults">
+  <section class="page-hero compact-hero">
+    <img src="images/help-hero.jpg" alt="An older adult learning to use a tablet">
     <a class="back-btn" href="index.html" data-back aria-label="Go back to the previous page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.2 4.8 7.5 12l7.7 7.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <div class="page-hero-copy">
-      <h1>Classes</h1>
-      <p class="lead">Technology classes designed with the needs of older adults in mind.</p>
+      <h1>Get Technology Help</h1>
     </div>
   </section>
-  <main id="main">
-    <section class="content-band class-intro" aria-labelledby="learn-heading">
-      <h2 id="learn-heading">Learn Technology. Build Confidence.</h2>
-      <p>You love to learn, but the rapid pace of new technology in our daily lives can sometimes make you feel left behind. TechSmart is your partner in learning to use the latest phones, gadgets, and apps so you can stay in the know while having fun!</p>
-      <p>Our mission is to provide the training, insight, and advice you need to stay connected, informed, fulfilled, and safe.</p>
+  <main id="main" class="classes-main">
+    <section class="class-find" id="find-workshop" aria-labelledby="workshop-search-heading">
+      <div class="find-search">
+        <h2 id="workshop-search-heading">Find a Class</h2>
+        <p>Enter your 5-digit ZIP code to search for available classes and nearby workshops.</p>
+        <form id="zip-form" novalidate>
+          <label for="zip">ZIP Code</label>
+          <div class="zip-row">
+            <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="Example: 30005" required>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+          <p class="zip-error" id="zip-error" role="alert" hidden>Please enter a valid 5-digit ZIP code, such as 30005.</p>
+        </form>
+      </div>
+      <div class="workshop-results" aria-live="polite">
+        <h3 id="results-heading" class="sr-only">Workshop results</h3>
+        <p class="workshop-status" id="workshop-status"></p>
+        <div id="workshop-list" class="workshop-list"></div>
+      </div>
     </section>
 
     <section class="class-grid" aria-label="Class options">
-      <article class="class-box" id="one-on-one">
-        <img src="images/class-one.jpg" alt="One-on-one technology coaching with an older adult">
-        <div class="class-box-copy">
-          <h2>One-on-One Training</h2>
-          <p>Register yourself or a loved one for a personalized 60-minute technology lesson. Each class is tailored to your experience, interests, and learning needs.</p>
-          <p>You get individual attention, time to ask questions, and a comfortable pace so nothing feels rushed.</p>
-          <a class="btn btn-hero btn-primary" href="get-help.html?type=one-on-one">Join a Class</a>
+      <article class="class-option" id="one-on-one">
+        <h2>One-on-One Training</h2>
+        <div class="class-box">
+          <img src="images/class-one.jpg" alt="One-on-one technology coaching with an older adult">
+          <div class="class-box-copy">
+            <p>Register yourself or a loved one for a personalized 60-minute lesson, tailored to your experience, with time to ask questions at a comfortable pace.</p>
+          </div>
         </div>
       </article>
-      <article class="class-box" id="group-training">
-        <img src="images/class-group.jpg" alt="Older adults learning together in a group technology class">
-        <div class="class-box-copy">
-          <h2>Group Training Sessions</h2>
-          <p>TechSmart offers group technology classes online and through partner centers across Metro Atlanta.</p>
-          <p>These sessions help older adults build practical digital skills in a welcoming environment while connecting and learning alongside others.</p>
-          <a class="btn btn-hero btn-primary" href="get-help.html?type=group">Find a Class</a>
+      <article class="class-option" id="group-training">
+        <h2>Group Training Sessions</h2>
+        <div class="class-box">
+          <img src="images/class-group.jpg" alt="Older adults learning together in a group technology class">
+          <div class="class-box-copy">
+            <p>Group technology classes online and at partner centers across Metro Atlanta, in a welcoming setting where you can learn alongside others.</p>
+          </div>
         </div>
       </article>
     </section>
@@ -83,14 +97,14 @@
   </main>
   <footer>
     <div class="inner">
-      <span class="copy">© 2026 TechSmart for Seniors</span>
+      <span class="copy">© 2026 TechSmart Learning for Seniors</span>
       <nav class="foot-nav" aria-label="Footer">
         <a href="donate.html">Donate</a>
-        <a href="volunteer.html">Volunteer</a>
+        <a href="volunteer.html">I Want to Help</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

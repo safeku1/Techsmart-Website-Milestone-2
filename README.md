@@ -6,10 +6,9 @@ Open `index.html` in a browser. No install is required.
 
 ## What this prototype covers
 
-- Six pages with the same navigation: Home, Classes, Get Help, Volunteer, About, and Contact.
-- Two visitor journeys. Join a Class opens the Get Help form. I Want to Help opens the Volunteer form.
-- Both class types on the Classes page use the same request form.
-- Public forms on Get Help, Volunteer, and Contact.
+- Navigation: Home, Resources, About, Contact, and Donate. I Need Technology Help and I Want to Help are homepage buttons only.
+- Two visitor journeys. I Need Technology Help opens workshops and registration. I Want to Help opens the Volunteer form.
+- Public forms on class registration, Volunteer, and Contact.
 - Mocked responses only. Submit checks the required fields and shows a thank-you on the same page. Nothing is sent to Salesforce.
 - A first accessibility pass: skip link, labeled fields, large type, visible focus, 48-pixel buttons, phone menu, contrast, and alt text on the home photo.
 - A desktop layout and a phone layout. On a phone, use the Menu button. The cards stack.
@@ -17,8 +16,7 @@ Open `index.html` in a browser. No install is required.
 ## Files
 
 - `index.html` is the home page and the two main paths.
-- `classes.html` is one-on-one training and group workshops.
-- `get-help.html` is the class request form.
+- `classes.html` is the I Need Technology Help page: workshops, one-on-one training, and group sessions.
 - `volunteer.html` is the volunteer interest form.
 - `about.html` is the organization story, mission, vision, and values.
 - `more.html` is articles and the review form.
